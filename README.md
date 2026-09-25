@@ -22,3 +22,12 @@ Bu proje, 1 Ocak 2017 – 24 Nisan 2017 tarihleri arasında Delhi şehrine ait g
 ## Gelecek Adımlar
 - Değişkenler arası korelasyon analizi ve grafiksel görselleştirmeler (EDA).
 - Sıcaklık tahmini üzerine regresyon ve zaman serisi modellemeleri.
+## Keşifçi Veri Analizi (EDA) ve Görselleştirme
+
+Aşağıdaki grafikte Ocak 2017 ile Nisan 2017 arasındaki sıcaklık ve nem değişimi incelenmiştir:
+
+![Delhi Sıcaklık ve Nem Trendi](delhi-trend.png)
+
+### Temel Çıkarımlar
+- **Zıt Yönlü Trend:** Delhi'de kıştan ilkbahara geçiş sürecinde sıcaklık ortalama 11°C seviyelerinden 34.5°C seviyelerine yükselirken, nem oranı belirgin bir düşüş göstermiştir.
+- **Korelasyon Analizi:** Ortalama sıcaklık ile nem oranı arasında **r = -0.86** seviyesinde güçlü ve negatif yönlü bir ilişki tespit edilmiştir (p < 0.001).
