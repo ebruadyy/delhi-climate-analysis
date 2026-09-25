@@ -22,7 +22,7 @@ Bu proje, 1 Ocak 2017 – 24 Nisan 2017 tarihleri arasında Delhi şehrine ait g
 ## Gelecek Adımlar
 - Değişkenler arası korelasyon analizi ve grafiksel görselleştirmeler (EDA).
 - Sıcaklık tahmini üzerine regresyon ve zaman serisi modellemeleri.
-## Keşifçi Veri Analizi (EDA) ve Görselleştirme
+## 1.Keşifçi Veri Analizi (EDA) ve Görselleştirme
 
 Aşağıdaki grafikte Ocak 2017 ile Nisan 2017 arasındaki sıcaklık ve nem değişimi incelenmiştir:
 
@@ -31,3 +31,14 @@ Aşağıdaki grafikte Ocak 2017 ile Nisan 2017 arasındaki sıcaklık ve nem de�
 ### Temel Çıkarımlar
 - **Zıt Yönlü Trend:** Delhi'de kıştan ilkbahara geçiş sürecinde sıcaklık ortalama 11°C seviyelerinden 34.5°C seviyelerine yükselirken, nem oranı belirgin bir düşüş göstermiştir.
 - **Korelasyon Analizi:** Ortalama sıcaklık ile nem oranı arasında **r = -0.86** seviyesinde güçlü ve negatif yönlü bir ilişki tespit edilmiştir (p < 0.001).
+## 2. Doğrusal Regresyon Modellemesi
+Sıcaklık artışının nem üzerindeki marjinal etkisini ölçmek amacıyla En Küçük Kareler (OLS) yöntemiyle doğrusal regresyon modeli kurulmuştur:
+
+![Delhi Regresyon Modeli](delhi-regresyon.png)
+
+### Model Özeti ve Katsayılar
+- **Model Eşitliği:**  
+  $$\text{Nem} = -2.5715 \times \text{Sıcaklık} + 112.09$$
+- **Belirleme Katsayısı ($R^2$):** **0.7357**  
+  Nem oranındaki varyansın **%73.6'sı** sıcaklık değişkeni tarafından açıklanmaktadır.
+- **Eğim Yorumu:** Ortalama sıcaklıktaki her 1°C'lik artış, nem oranında ortalama **2.57 puanlık** bir düşüşe yol açmaktadır.
